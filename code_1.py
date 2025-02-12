@@ -1,10 +1,10 @@
 import requests
 import json
 
-API_TOKEN = "pk_49001402_QFZKHCNMLP6SJ5LD3JBWGP4O78QA3C7T"
-LIST_ID = "901805411539"
-LIST_NAME = "LIST 1"
-SUBTASK_ID = "86erdpe8b"  
+API_TOKEN = os.getenv("API_TOKEN")
+LIST_ID = os.getenv("LIST_ID")
+LIST_NAME = os.getenv("LIST_NAME")
+SUBTASK_ID = os.getenv("SUBTASK_ID")  
 
 HEADERS = {
     "Authorization": API_TOKEN,
